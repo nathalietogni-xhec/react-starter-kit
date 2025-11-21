@@ -70,7 +70,13 @@ const ClientTestimonials = () => {
             {testimonials.map((testimonial, index) => (
               <CarouselItem 
                 key={index} 
-                id={testimonial.role === "Entrepreneur" ? "entrepreneur-testimonial" : undefined}
+                id={
+                  testimonial.role === "Entrepreneur" 
+                    ? "entrepreneur-testimonial" 
+                    : testimonial.role === "Impact Investor"
+                    ? "impact-investor-testimonial"
+                    : undefined
+                }
                 className="pl-4 md:basis-1/2 lg:basis-1/3"
               >
                 <Card className="h-full hover:shadow-lg transition-shadow">

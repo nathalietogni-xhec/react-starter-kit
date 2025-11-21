@@ -63,9 +63,16 @@ const ProfileSelector = () => {
   const handleProfileClick = (profileId: string) => {
     setSelectedProfile(profileId);
     
+    let testimonialId = "";
     if (profileId === "entrepreneur") {
+      testimonialId = "entrepreneur-testimonial";
+    } else if (profileId === "impact") {
+      testimonialId = "impact-investor-testimonial";
+    }
+    
+    if (testimonialId) {
       setTimeout(() => {
-        const element = document.getElementById("entrepreneur-testimonial");
+        const element = document.getElementById(testimonialId);
         if (element) {
           element.scrollIntoView({ behavior: "smooth", block: "center" });
         }
