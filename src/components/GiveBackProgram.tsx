@@ -30,7 +30,7 @@ const GiveBackProgram = () => {
           </Link>
           
           <a 
-            href="https://id-preview--22f91281-2ae7-456e-bb47-49d58f019c06.lovable.app"
+            href="https://prompt-impact-circle.lovable.app"
             className="group relative"
           >
             <div className="absolute inset-0 bg-[#003d2e]/5 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-all duration-500" />
