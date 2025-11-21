@@ -1,14 +1,13 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
+import BNPHeader from "@/components/BNPHeader";
+import BNPHero from "@/components/BNPHero";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main className="pt-16">
-        <Hero />
-        <Features />
+    <div className="min-h-screen bg-background">
+      <BNPHeader />
+      <main>
+        <BNPHero />
+        {/* Additional content sections can be added here */}
       </main>
     </div>
   );
