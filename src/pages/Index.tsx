@@ -1,5 +1,13 @@
 import BNPHeader from "@/components/BNPHeader";
 import BNPHero from "@/components/BNPHero";
+import PersonaCards from "@/components/PersonaCards";
+import Solutions from "@/components/Solutions";
+import DigitalPlatform from "@/components/DigitalPlatform";
+import WhyBNP from "@/components/WhyBNP";
+import GlobalPresence from "@/components/GlobalPresence";
+import Insights from "@/components/Insights";
+import CTABanner from "@/components/CTABanner";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -7,8 +15,15 @@ const Index = () => {
       <BNPHeader />
       <main>
         <BNPHero />
-        {/* Additional content sections can be added here */}
+        <PersonaCards />
+        <Solutions />
+        <DigitalPlatform />
+        <WhyBNP />
+        <GlobalPresence />
+        <Insights />
+        <CTABanner />
       </main>
+      <Footer />
     </div>
   );
 };
