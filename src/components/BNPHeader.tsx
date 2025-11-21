@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import bnpLogo from "@/assets/bnp-logo.png";
+import bnpLogo from "@/assets/bnp-logo-new.png";
 
 const BNPHeader = () => {
   return (
