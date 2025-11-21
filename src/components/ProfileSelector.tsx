@@ -60,6 +60,19 @@ const profiles = [
 const ProfileSelector = () => {
   const [selectedProfile, setSelectedProfile] = useState<string | null>(null);
 
+  const handleProfileClick = (profileId: string) => {
+    setSelectedProfile(profileId);
+    
+    if (profileId === "entrepreneur") {
+      setTimeout(() => {
+        const element = document.getElementById("entrepreneur-testimonial");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }, 100);
+    }
+  };
+
   return (
     <section className="py-20 bg-secondary">
       <div className="max-w-7xl mx-auto px-6">
@@ -83,7 +96,7 @@ const ProfileSelector = () => {
                     ? "border-primary border-2 bg-primary/5 shadow-lg"
                     : "hover:border-primary/50"
                 }`}
-                onClick={() => setSelectedProfile(profile.id)}
+                onClick={() => handleProfileClick(profile.id)}
               >
                 <CardContent className="p-6 text-center">
                   <div className="mb-4 flex justify-center">
