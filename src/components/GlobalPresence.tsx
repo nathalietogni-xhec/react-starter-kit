@@ -1,4 +1,4 @@
-import globalMap from "@/assets/global-presence-map.png";
+import globalMap from "@/assets/global-presence-map.jpg";
 
 const GlobalPresence = () => {
   return (
