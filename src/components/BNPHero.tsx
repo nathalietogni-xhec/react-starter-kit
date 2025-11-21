@@ -1,5 +1,6 @@
 import heroImage from "@/assets/hero-image.jpg";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const BNPHero = () => {
   return (
@@ -33,6 +34,11 @@ const BNPHero = () => {
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
               Speak to an Advisor
             </Button>
+            <Link to="/simulator">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+                Try AI Simulator
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
