@@ -63,50 +63,52 @@ const GuidesCarousel = () => {
           </p>
         </div>
 
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full max-w-[1400px] mx-auto"
-        >
-          <CarouselContent className="-ml-4">
-            {guides.map((guide, index) => (
-              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                <Link to={guide.link}>
-                  <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer group">
-                    {/* Hero Image */}
-                    <img 
-                      src={guide.image} 
-                      alt={guide.title}
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    
-                    {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#1a4d3a]/95" />
-                    
-                    {/* Content Section */}
-                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                      <h3 className="text-2xl font-bold mb-4 leading-tight">
-                        {guide.title}
-                      </h3>
-                      <p className="text-white/90 mb-6 text-sm leading-relaxed">
-                        {guide.description}
-                      </p>
-                      <div className="flex justify-end">
-                        <span className="inline-flex items-center text-white hover:text-white/80 font-medium transition-colors">
-                          Read more <span className="ml-2">▶</span>
-                        </span>
+        <div className="relative">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-3">
+              {guides.map((guide, index) => (
+                <CarouselItem key={index} className="pl-3 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <Link to={guide.link}>
+                    <div className="relative h-[280px] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group">
+                      {/* Hero Image */}
+                      <img 
+                        src={guide.image} 
+                        alt={guide.title}
+                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      
+                      {/* Gradient Overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#1a4d3a]/95" />
+                      
+                      {/* Content Section */}
+                      <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h3 className="text-base font-bold mb-2 leading-tight line-clamp-2">
+                          {guide.title}
+                        </h3>
+                        <p className="text-white/90 mb-3 text-xs leading-relaxed line-clamp-2">
+                          {guide.description}
+                        </p>
+                        <div className="flex justify-end">
+                          <span className="inline-flex items-center text-white text-xs hover:text-white/80 font-medium transition-colors">
+                            Read more <span className="ml-1 text-[10px]">▶</span>
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="hidden lg:flex -left-12" />
-          <CarouselNext className="hidden lg:flex -right-12" />
-        </Carousel>
+                  </Link>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="-left-4 md:-left-12" />
+            <CarouselNext className="-right-4 md:-right-12" />
+          </Carousel>
+        </div>
       </div>
     </section>
   );
