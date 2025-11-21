@@ -29,8 +29,8 @@ const GiveBackProgram = () => {
             </div>
           </Link>
           
-          <a 
-            href="https://prompt-impact-circle.lovable.app"
+          <Link 
+            to="/give-back/impact-matching"
             className="group relative"
           >
             <div className="absolute inset-0 bg-[#003d2e]/5 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-all duration-500" />
@@ -38,7 +38,7 @@ const GiveBackProgram = () => {
               <span className="text-sm">Discover the "Impact Matching"</span>
               <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform duration-300 stroke-[1.5]" />
             </div>
-          </a>
+          </Link>
         </div>
 
         {/* Subtle Divider Lines */}
