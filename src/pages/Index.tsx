@@ -4,6 +4,7 @@ import ProfileSelector from "@/components/ProfileSelector";
 import GuidesCarousel from "@/components/GuidesCarousel";
 import GiveBackProgram from "@/components/GiveBackProgram";
 import CEOQuote from "@/components/CEOQuote";
+import ClientTestimonials from "@/components/ClientTestimonials";
 import PersonaCards from "@/components/PersonaCards";
 import Solutions from "@/components/Solutions";
 import WhyBNP from "@/components/WhyBNP";
@@ -23,6 +24,7 @@ const Index = () => {
         <GuidesCarousel />
         <GiveBackProgram />
         <CEOQuote />
+        <ClientTestimonials />
         <PersonaCards />
         <Solutions />
         <WhyBNP />
