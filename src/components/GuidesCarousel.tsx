@@ -5,6 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Link } from "react-router-dom";
 import guide1m from "@/assets/guides/guide-1m-investment.jpg";
 import guideDiversify from "@/assets/guides/guide-diversify.jpg";
 import guideLargeCapital from "@/assets/guides/guide-large-capital.jpg";
@@ -16,32 +17,38 @@ const guides = [
   {
     title: "How to invest my 1 million euros?",
     description: "Expert strategies for managing significant wealth and maximizing returns.",
-    image: guide1m
+    image: guide1m,
+    link: "/guides/1-million-euros"
   },
   {
     title: "How do I diversify my portfolio?",
     description: "Essential techniques for spreading risk across different asset classes.",
-    image: guideDiversify
+    image: guideDiversify,
+    link: "/guides/diversify-portfolio"
   },
   {
     title: "Large Capital investment: what to do?",
     description: "Strategic approaches for deploying substantial capital effectively.",
-    image: guideLargeCapital
+    image: guideLargeCapital,
+    link: "/guides/large-capital"
   },
   {
     title: "How to start investing?",
     description: "A beginner's guide to taking your first steps in wealth building.",
-    image: guideStartInvesting
+    image: guideStartInvesting,
+    link: "/guides/start-investing"
   },
   {
     title: "Where to invest 2025?",
     description: "Market insights and opportunities for the year ahead.",
-    image: guide2025
+    image: guide2025,
+    link: "/guides/invest-2025"
   },
   {
     title: "BNP Guide to sustainable investment",
     description: "Align your investments with environmental and social values.",
-    image: guideSustainable
+    image: guideSustainable,
+    link: "/guides/sustainable-investment"
   }
 ];
 
@@ -66,35 +73,34 @@ const GuidesCarousel = () => {
           <CarouselContent className="-ml-4">
             {guides.map((guide, index) => (
               <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer group">
-                  {/* Hero Image */}
-                  <img 
-                    src={guide.image} 
-                    alt={guide.title}
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  
-                  {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#1a4d3a]/95" />
-                  
-                  {/* Content Section */}
-                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <h3 className="text-2xl font-bold mb-4 leading-tight">
-                      {guide.title}
-                    </h3>
-                    <p className="text-white/90 mb-6 text-sm leading-relaxed">
-                      {guide.description}
-                    </p>
-                    <div className="flex justify-end">
-                      <a 
-                        href="#" 
-                        className="inline-flex items-center text-white hover:text-white/80 font-medium transition-colors"
-                      >
-                        Read more <span className="ml-2">▶</span>
-                      </a>
+                <Link to={guide.link}>
+                  <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer group">
+                    {/* Hero Image */}
+                    <img 
+                      src={guide.image} 
+                      alt={guide.title}
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#1a4d3a]/95" />
+                    
+                    {/* Content Section */}
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                      <h3 className="text-2xl font-bold mb-4 leading-tight">
+                        {guide.title}
+                      </h3>
+                      <p className="text-white/90 mb-6 text-sm leading-relaxed">
+                        {guide.description}
+                      </p>
+                      <div className="flex justify-end">
+                        <span className="inline-flex items-center text-white hover:text-white/80 font-medium transition-colors">
+                          Read more <span className="ml-2">▶</span>
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </CarouselItem>
             ))}
           </CarouselContent>
