@@ -1,79 +1,61 @@
-import { ArrowRight, Heart, TrendingUp } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const GiveBackProgram = () => {
   return (
-    <section className="relative py-32 overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
-      {/* Abstract Gradient Shapes */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-accent/20 to-primary/20 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full blur-3xl animate-pulse delay-500" />
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        {/* Glassmorphism Container */}
-        <div className="relative backdrop-blur-xl bg-white/60 dark:bg-gray-900/60 rounded-3xl border border-white/20 shadow-2xl overflow-hidden animate-fade-in">
-          {/* Glowing Edge Effect */}
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 opacity-50 blur-xl" />
-          <div className="absolute inset-0 rounded-3xl border border-primary/30 shadow-[0_0_30px_rgba(0,128,0,0.3)]" />
-          
-          <div className="relative p-12 text-center">
-            {/* Dynamic Impact Icon */}
-            <div className="flex justify-center mb-8 animate-scale-in">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-xl opacity-50 animate-pulse" />
-                <div className="relative bg-gradient-to-br from-primary to-accent p-6 rounded-full shadow-lg transform hover:scale-110 transition-transform duration-300">
-                  <div className="flex items-center gap-2">
-                    <Heart className="h-10 w-10 text-white fill-white animate-pulse" />
-                    <TrendingUp className="h-8 w-8 text-white" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Heading */}
-            <h2 className="text-5xl font-bold mb-4 animate-fade-in bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              Discover our "Give Back Program"
-            </h2>
-            
-            <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in">
-              Invest with purpose. Multiply your impact. Shape a better tomorrow.
-            </p>
-
-            {/* CTAs with Glow Effects */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 animate-fade-in">
-              <Link 
-                to="/give-back/about"
-                className="group relative"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-accent text-white rounded-full font-semibold shadow-lg transform hover:scale-105 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,128,0,0.5)]">
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-                  <span>About the program</span>
-                </div>
-              </Link>
-              
-              <Link 
-                to="/give-back/impact-matching"
-                className="group relative"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-accent to-primary text-white rounded-full font-semibold shadow-lg transform hover:scale-105 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,128,0,0.5)]">
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-                  <span>Discover the "Impact Matching"</span>
-                </div>
-              </Link>
-            </div>
-
-            {/* Floating Particles Effect */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/50 rounded-full animate-float" />
-              <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-accent/50 rounded-full animate-float delay-700" />
-              <div className="absolute bottom-1/4 right-1/4 w-2 h-2 bg-primary/50 rounded-full animate-float delay-1000" />
-              <div className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-accent/50 rounded-full animate-float delay-300" />
+    <section className="relative py-32 bg-gradient-to-b from-white to-[#fdfcfb]">
+      <div className="max-w-5xl mx-auto px-6">
+        {/* Subtle Icon */}
+        <div className="flex justify-center mb-8">
+          <div className="relative group">
+            <div className="absolute inset-0 bg-[#003d2e]/5 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+            <div className="relative w-16 h-16 rounded-full border border-[#003d2e]/20 flex items-center justify-center bg-white shadow-sm">
+              <Sparkles className="h-7 w-7 text-[#003d2e] stroke-[1.5]" />
             </div>
           </div>
+        </div>
+
+        {/* Premium Serif Heading */}
+        <div className="text-center mb-6">
+          <h2 className="text-5xl md:text-6xl font-serif font-light text-[#1a1a1a] tracking-tight leading-tight mb-4">
+            Discover our<br />
+            <span className="italic">"Give Back Program"</span>
+          </h2>
+          <p className="text-lg text-[#6b6b6b] font-light max-w-2xl mx-auto leading-relaxed">
+            Where exceptional wealth meets exceptional purpose
+          </p>
+        </div>
+
+        {/* Elegant CTAs */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
+          <Link 
+            to="/give-back/about"
+            className="group relative"
+          >
+            <div className="absolute inset-0 bg-[#003d2e]/5 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-all duration-500" />
+            <div className="relative flex items-center gap-3 px-8 py-3.5 bg-white border border-[#003d2e]/30 text-[#003d2e] rounded-full font-light tracking-wide shadow-sm hover:shadow-md hover:border-[#003d2e]/50 transition-all duration-300">
+              <span className="text-sm">About the program</span>
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform duration-300 stroke-[1.5]" />
+            </div>
+          </Link>
+          
+          <Link 
+            to="/give-back/impact-matching"
+            className="group relative"
+          >
+            <div className="absolute inset-0 bg-[#003d2e]/5 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-all duration-500" />
+            <div className="relative flex items-center gap-3 px-8 py-3.5 bg-[#003d2e] border border-[#003d2e] text-white rounded-full font-light tracking-wide shadow-sm hover:shadow-md hover:bg-[#002d1e] transition-all duration-300">
+              <span className="text-sm">Discover the "Impact Matching"</span>
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform duration-300 stroke-[1.5]" />
+            </div>
+          </Link>
+        </div>
+
+        {/* Subtle Divider Lines */}
+        <div className="flex items-center justify-center gap-2 mt-16">
+          <div className="w-12 h-px bg-gradient-to-r from-transparent to-[#003d2e]/20" />
+          <div className="w-1 h-1 rounded-full bg-[#003d2e]/30" />
+          <div className="w-12 h-px bg-gradient-to-l from-transparent to-[#003d2e]/20" />
         </div>
       </div>
     </section>

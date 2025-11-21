@@ -60,6 +60,7 @@ export default {
       },
       fontFamily: {
         sans: ["Arial", "Helvetica", "sans-serif"],
+        serif: ["Playfair Display", "Georgia", "Garamond", "serif"],
       },
       transitionTimingFunction: {
         smooth: "cubic-bezier(0.4, 0, 0.2, 1)",
