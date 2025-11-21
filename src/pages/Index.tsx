@@ -1,5 +1,6 @@
 import BNPHeader from "@/components/BNPHeader";
 import BNPHero from "@/components/BNPHero";
+import ProfileSelector from "@/components/ProfileSelector";
 import PersonaCards from "@/components/PersonaCards";
 import Solutions from "@/components/Solutions";
 import DigitalPlatform from "@/components/DigitalPlatform";
@@ -15,6 +16,7 @@ const Index = () => {
       <BNPHeader />
       <main>
         <BNPHero />
+        <ProfileSelector />
         <PersonaCards />
         <Solutions />
         <DigitalPlatform />
