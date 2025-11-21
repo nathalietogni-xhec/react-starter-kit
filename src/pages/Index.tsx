@@ -3,6 +3,7 @@ import BNPHero from "@/components/BNPHero";
 import ProfileSelector from "@/components/ProfileSelector";
 import GuidesCarousel from "@/components/GuidesCarousel";
 import GiveBackProgram from "@/components/GiveBackProgram";
+import CEOQuote from "@/components/CEOQuote";
 import PersonaCards from "@/components/PersonaCards";
 import Solutions from "@/components/Solutions";
 import DigitalPlatform from "@/components/DigitalPlatform";
@@ -22,6 +23,7 @@ const Index = () => {
         <ProfileSelector />
         <GuidesCarousel />
         <GiveBackProgram />
+        <CEOQuote />
         <PersonaCards />
         <Solutions />
         <DigitalPlatform />
