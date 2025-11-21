@@ -8,6 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import bnpLogo from "@/assets/bnp-logo.png";
 
 const BNPHeader = () => {
   return (
@@ -17,16 +18,12 @@ const BNPHeader = () => {
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-              <div className="w-12 h-12 bg-[hsl(160,100%,12%)] rounded flex items-center justify-center">
-                <svg viewBox="0 0 24 24" className="w-7 h-7 text-white" fill="currentColor">
-                  <path d="M12 2L4 7v10l8 5 8-5V7l-8-5zm5 13.5l-5 3.125L7 15.5v-7l5-3.125L17 8.5v7z" />
-                </svg>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold tracking-wide leading-tight">BNP PARIBAS</span>
-                <span className="text-xs font-bold tracking-wide leading-tight">WEALTH MANAGEMENT</span>
-              </div>
+            <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <img 
+                src={bnpLogo} 
+                alt="BNP Paribas Wealth Management" 
+                className="h-14"
+              />
             </Link>
           </div>
 
