@@ -6,7 +6,6 @@ import GiveBackProgram from "@/components/GiveBackProgram";
 import CEOQuote from "@/components/CEOQuote";
 import PersonaCards from "@/components/PersonaCards";
 import Solutions from "@/components/Solutions";
-import DigitalPlatform from "@/components/DigitalPlatform";
 import WhyBNP from "@/components/WhyBNP";
 import TopRecommendations from "@/components/TopRecommendations";
 import GlobalPresence from "@/components/GlobalPresence";
@@ -26,7 +25,6 @@ const Index = () => {
         <CEOQuote />
         <PersonaCards />
         <Solutions />
-        <DigitalPlatform />
         <WhyBNP />
         <TopRecommendations />
         <GlobalPresence />
